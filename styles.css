@@ -120,3 +120,21 @@ body {
   margin: 20px;
   width: auto;
 }
+.bg-img {
+  /* The image used */
+  background-image: url("The Sowers logo2.png");
+
+
+
+  min-height: 1500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: center;
+  margin: 20px;
+   border-radius: 25px;
+}
