@@ -1,0 +1,122 @@
+body {
+ color: whitesmoke;
+ text-align: center;
+  font-family:  Copperplate, Papyrus, fantasy;
+
+}
+
+.grad1{
+  height: 150px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, forestgreen , royalblue);
+  margin-bottom: 3px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+   border-radius: 25px;
+}
+
+.navbar{
+  width: 100%;
+  background-color: none;
+  overflow: hidden;
+  position: center;
+}
+
+.navbar a {
+  float: left;
+  padding: 14px 16px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+.active {
+  background-color: lightgreen;
+  border-radius: 15px;
+}
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  padding: 14px 16px;
+  background-color: transparent;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: lightgreen;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: none;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: lightgreen;
+  color: white;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+@media screen and (max-width: 500px) {
+   .column{
+    
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("The Sowers logo2.png");
+
+
+
+  min-height: 1500px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: center;
+  margin: 20px;
+   border-radius: 25px;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
